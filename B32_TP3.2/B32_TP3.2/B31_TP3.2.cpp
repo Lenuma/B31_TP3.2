@@ -6,7 +6,7 @@ Code Permanent: 0371618
 #include <iostream>
 #include <conio.h>
 
-static char Joconde[] = {
+unsigned char Joconde[640] = {
 	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 	0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,
@@ -46,10 +46,29 @@ static char Joconde[] = {
 	1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,
 	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
+
+struct Info_s {
+	unsigned char Bit;
+	unsigned Position;
+	unsigned char *Adresse;
+};
+
+Info_s MsgSecret[32];
+
+//void SelectionBit(unsigned char Init[], Info_s Msg[])
+//{
+//	for (int i = 0; i < 7; i++)
+//	{
+//		if (!(Init[i] & 1))
+//		{
+//			
+//		}
+//	}
+//}
 
 int main()
 {
-
+	cout << "Hello";
+	return 0;
 }
