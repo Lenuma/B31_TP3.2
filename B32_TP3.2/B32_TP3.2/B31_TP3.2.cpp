@@ -48,6 +48,8 @@ unsigned char Joconde[640] = {
 	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 };
 
+unsigned char Transmis[640];
+
 struct Info_s {
 	unsigned char Bit;
 	unsigned Position;
@@ -56,19 +58,19 @@ struct Info_s {
 
 Info_s MsgSecret[32];
 
-//void SelectionBit(unsigned char Init[], Info_s Msg[])
-//{
-//	for (int i = 0; i < 7; i++)
-//	{
-//		if (!(Init[i] & 1))
-//		{
-//			
-//		}
-//	}
-//}
+void SelectionBit(unsigned char Init[], Info_s Msg[])
+{
+	int Position = 0;
+	for (int i = 0; i < 9; i++)
+	{
+		if (!(Init[i] & 1))
+		{
+			
+		}
+	}
+}
 
 int main()
 {
-	cout << "Hello";
 	return 0;
 }
